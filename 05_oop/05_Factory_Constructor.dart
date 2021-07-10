@@ -23,4 +23,8 @@ class Person {
 void main(List<String> args) {
   Person p1 = new Person("lynn");
   print(p1.name); // lynn
+
+  Person p2 = new Person("jack");
+  print(p2.name); // lynn，单例模式
+  print(p1 == p2); // true
 }
